@@ -843,8 +843,11 @@ body {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-name:focus .icon-name {
+.input-name:focus {
   border-color: #4d5ae5;
+}
+
+.input-name:focus+.icon-name{
   fill: #4D5AE5;
 }
 
@@ -855,9 +858,7 @@ body {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-name:focus {
-  fill: #4d5ae5;
-}
+
 .phone-box {
   margin-bottom: 8px;
 }
@@ -885,7 +886,10 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-phone:focus {
-  border-color: #4d5ae5;
+  border-color: #4d5ae5;}
+
+.input-phone:focus+.icon-phone{
+  fill: #4D5AE5;
 }
 .icon-phone {
   position: absolute;
@@ -894,9 +898,7 @@ body {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-phone:focus {
-  fill: #4d5ae5;
-}
+
 .email-box {
   margin-bottom: 8px;
 }
@@ -924,8 +926,11 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-email:focus {
-  border-color: #4d5ae5;
+  border-color: #4d5ae5;}
+.input-email:focus+.icon-email{
+  fill: #4D5AE5;
 }
+
 .icon-email {
   position: absolute;
   left: 16px;
