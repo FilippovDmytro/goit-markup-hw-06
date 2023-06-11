@@ -430,7 +430,6 @@
           <p class="sub-text">Subscribe</p>
           <form class="sub-form">
             <label class="sub-label">
-              Subscribe
               <input
                 class="sub-input"
                 type="email"
@@ -508,6 +507,7 @@
               id="user-comment"
               class="comment-text"
               placeholder="Text input"
+              name="user-comment"
             ></textarea>
           </div>
           <div class="checkbox">
@@ -518,16 +518,17 @@
               value="true"
               name="user-privacy"
             />
-            <label class="check-label" for="user-privacy"
-              >I accept the terms and conditions of the<span class="check-span">
+            <label class="check-label" for="user-privacy">
+              <span class="check-span">
                 <svg class="click-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-click"></use>
+                  <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
+              I accept the terms and conditions of the
               <a class="check-text" href="#">Privacy Policy</a>
             </label>
-            <button type="submit" class="box-btn">Send</button>
           </div>
+          <button type="submit" class="box-btn">Send</button>
         </form>
       </div>
     </div>
