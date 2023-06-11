@@ -551,7 +551,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  /* margin-bottom: 16px; */
+  margin-bottom: 16px;
 }
 
 .sub-form {
@@ -580,8 +580,12 @@ body {
   letter-spacing: 0.04em;
   background-color: transparent;
   border: 1px solid #ffffff;
+  color: #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+.sub-input::placeholder {
+  color: #ffffff;
 }
 
 .sub-btn {
@@ -811,6 +815,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--navy-blue)
   border-color: var(--navy-blue);
 }
 .name-box {
@@ -839,8 +844,9 @@ body {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-name:focus {
+.input-name:focus .icon-name {
   border-color: #4d5ae5;
+  fill: #4D5AE5;
 }
 .icon-name {
   position: absolute;
@@ -955,7 +961,7 @@ body {
   margin-bottom: 24px;
   position: relative;
 }
-.chack-label {
+.check-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -972,18 +978,18 @@ body {
   border-radius: 2px;
   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.check-input:checked.check-span{
+.check-input:checked .check-span{
   border: none;
   background-color: var(--action-color);
   fill:var(--cloud);
 }
-.ceck-text{
+.check-text{
   color: var(--primary-brand);
-
 }
 
-.box-btn{
+.box-btn {
   display: block;
   min-width: 169px;
   height: 56px;
@@ -998,6 +1004,5 @@ body {
   border: none; 
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-
 }
 
